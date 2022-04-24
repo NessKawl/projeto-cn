@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+* {
+    font: normal 1em Arial, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor0: #615216;
+    --cor1: #FAE282;
+    --cor2: #E0BE34;
+    --cor3: #665923;
+    --cor4: #AD9328;
+}
+
+body {
+    background-color: var(--cor1);
+}
+
+main {
+    position: absolute;
+    background-image: linear-gradient(to bottom right, var(--cor0), var(--cor4));
+    padding: 10px;
+    width: 50vh;
+    height: 50vh;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.445);
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main > h1 {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+}
+
+section > input {
+    width: 250px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 2px;
+}
+
+section > button {
+    position: absolute;
+    font-weight: bold;
+    width: 250px;
+    display: block;
+    padding: 2px;
+
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

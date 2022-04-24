@@ -3,14 +3,24 @@
 * {
     font: normal 1em Arial, Verdana, sans-serif;
 }
-body {
-    background-color: rgb(230, 170, 92);
+
+:root {
+    --cor0: #615216;
+    --cor1: #FAE282;
+    --cor2: #E0BE34;
+    --cor3: #665923;
+    --cor4: #AD9328;
 }
+
+body {
+    background-color: var(--cor1);
+}
+
 header {
-    background-color: rgb(173, 128, 68);
+    background-color: var(--cor4);
     padding: 1px;
     margin: 5px;
-    box-shadow: black 5px 5px 10px;
+    box-shadow: rgba(0, 0, 0, 0.397) 5px 5px 10px;
 }
 
 header > h1 {
@@ -18,14 +28,23 @@ header > h1 {
     font: bolder 2em Arial, Verdana, sans-serif;
 }
 
+nav {
+    padding: 5px;
+    text-align: end;
+}
+
 nav > a {
     text-decoration: none;
-    color: white;
+    color: black;
+}
+
+nav > a:hover {
+    text-decoration: underline;
 }
 
 footer {
     text-align: center;
-    background-color: rgb(124, 92, 49);
+    background-color: var(--cor4);
     padding: 1px;
     margin: 10px;
 }
