@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+* {
+    font: normal 1em Arial, Verdana, sans-serif;
+}
+body {
+    background-color: rgb(230, 170, 92);
+}
+header {
+    background-color: rgb(173, 128, 68);
+    padding: 1px;
+    margin: 5px;
+    box-shadow: black 5px 5px 10px;
+}
+
+header > h1 {
+    text-align: center;
+    font: bolder 2em Arial, Verdana, sans-serif;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(124, 92, 49);
+    padding: 1px;
+    margin: 10px;
+}
