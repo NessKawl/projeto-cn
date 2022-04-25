@@ -1,7 +1,21 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'Croissant One';
+    src: url('fonts/CroissantOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Questrial';
+    src: url('fonts/Questrial-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
 * {
     font: normal 1em Arial, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
 
 :root {
@@ -10,6 +24,9 @@
     --cor2: #E0BE34;
     --cor3: #665923;
     --cor4: #AD9328;
+
+    --fonteTítulo: 'Croissant One', cursive;
+    --fonte1: 'Questrial', cursive;
 }
 
 body {
@@ -17,15 +34,16 @@ body {
 }
 
 header {
-    background-color: var(--cor4);
-    padding: 1px;
-    margin: 5px;
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor4), var(--cor3));
+    padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.397) 5px 5px 10px;
 }
 
 header > h1 {
-    text-align: center;
-    font: bolder 2em Arial, Verdana, sans-serif;
+    text-align: start;
+    font: bolder 2em var(--fonteTítulo);
+    margin-top: 20px;
+    margin-left: 8%;
 }
 
 nav {
@@ -34,6 +52,7 @@ nav {
 }
 
 nav > a {
+    font-family: var(--fonte1);
     text-decoration: none;
     color: black;
 }
@@ -43,8 +62,8 @@ nav > a:hover {
 }
 
 footer {
+    font-family: var(--fonte1);
     text-align: center;
     background-color: var(--cor4);
-    padding: 1px;
-    margin: 10px;
+    padding: 1px;margin-top: 10px;
 }

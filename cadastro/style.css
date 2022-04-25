@@ -1,5 +1,17 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'Croissant One';
+    src: url('fonts/CroissantOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Questrial';
+    src: url('fonts/Questrial-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
 * {
     font: normal 1em Arial, Verdana, sans-serif;
     margin: 0px;
@@ -12,10 +24,27 @@
     --cor2: #E0BE34;
     --cor3: #665923;
     --cor4: #AD9328;
+
+    --fonteTítulo: 'Croissant One', cursive;
+    --fonte1: 'Questrial', cursive;
 }
 
 body {
     background-color: var(--cor1);
+}
+
+#prev {
+    margin: 15px;
+}
+
+div#prev > a {
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+div#prev > a:hover {
+    text-decoration: underline;
 }
 
 main {
@@ -35,7 +64,7 @@ main {
 main > h1 {
     font-size: 1.5em;
     text-align: center;
-    font-weight: bold;
+    font-weight: Bold;
 }
 
 section > input {
