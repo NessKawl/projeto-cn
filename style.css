@@ -24,6 +24,7 @@
     --cor2: #E0BE34;
     --cor3: #665923;
     --cor4: #AD9328;
+    --cor5: #003cffcb;
 
     --fonteTítulo: 'Croissant One', cursive;
     --fonte1: 'Questrial', cursive;
@@ -34,7 +35,8 @@ body {
 }
 
 header {
-    background-image: linear-gradient(to bottom, var(--cor1), var(--cor4), var(--cor3));
+    /*background-image: linear-gradient(to bottom, var(--cor1), var(--cor4), var(--cor3));*/
+    background-color: var(--cor5);
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.397) 5px 5px 10px;
 }
@@ -44,6 +46,13 @@ header > h1 {
     font: bolder 2em var(--fonteTítulo);
     margin-top: 20px;
     margin-left: 8%;
+}
+
+img {
+    width: 12vw;
+}
+
+#container {
 }
 
 nav {
