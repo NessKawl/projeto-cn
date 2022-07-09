@@ -37,8 +37,9 @@ body {
 header {
     /*background-image: linear-gradient(to bottom, var(--cor1), var(--cor4), var(--cor3));*/
     background-color: var(--cor5);
-    padding: 10px;
-    box-shadow: rgba(0, 0, 0, 0.397) 5px 5px 10px;
+    box-shadow: rgba(0, 0, 0, 0.555) 1px 3px 5px;
+    height: 22vh;
+    margin-bottom: 30px;
 }
 
 header > h1 {
@@ -48,26 +49,49 @@ header > h1 {
     margin-left: 8%;
 }
 
-img {
-    width: 12vw;
+img#logo {
+    width: 10vw;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.555) 1px 3px 6px;
 }
 
 #container {
+    position: absolute;
+    left: 7%;
+    top: 3%;
 }
 
 nav {
-    padding: 5px;
+    position: relative;
     text-align: end;
+    margin-right: 20px;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 
 nav > a {
     font-family: var(--fonte1);
     text-decoration: none;
     color: black;
+    font-size: 1.2em;
+    padding: 10px;
 }
 
 nav > a:hover {
     text-decoration: underline;
+    color: white;
+}
+
+main {
+    background-color: white;
+    min-width: 98vw;
+}
+
+#img01 {
+    background-image: url('imagens/wallpaper001.jpg');
+    height: 80vh;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 footer {
