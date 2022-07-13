@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'Monserrat';
+    src: url('fonts/static/Montserrat-Regular.ttf') format('truetype');
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -13,6 +18,16 @@ header {
 }
 
 header > h1 {
+    position: relative;
+    font-family: 'Monserrat';
     padding: 20px;
+    left: 110px;
 }
+
+#logo {
+    position: absolute;
+    padding: 5px;
+    left: 10px;
+}
+
 
